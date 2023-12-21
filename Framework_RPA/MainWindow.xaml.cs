@@ -168,8 +168,9 @@ namespace Framework_RPA
                                 FontWeight = "Normal",
                                 AblagePfad = testfallOrdner.FullName,
                                 Checkbox = "Visible",
-                                SkriptID = testfallXML.SkriptID,
-                                SkriptPfad = testfallXML.SkriptPfad,
+                                Argument1 = testfallXML.Argument1,
+                                Argument2 = testfallXML.Argument2,
+                                Argument3 = testfallXML.Argument3,
                                 Bereich = testfallXML.Bereich
                             });
 
@@ -405,8 +406,9 @@ namespace Framework_RPA
                 TestcaseXML testfallXML = new TestcaseXML();
                 testfallXML.AblagePfad = testfall.AblagePfad;
                 testfallXML.DatenPfad = testfall.dataFile;
-                testfallXML.SkriptID = testfall.SkriptID;
-                testfallXML.SkriptPfad = testfall.SkriptPfad;
+                testfallXML.Argument1 = testfall.Argument1;
+                testfallXML.Argument2 = testfall.Argument2;
+                testfallXML.Argument3 = testfall.Argument3;
                 testfallXML.Bereich = testfall.Bereich;
                 testfallXML.Bezeichnung = testfall.Bezeichnung;
                 testfallXML.ErgebnisXML = Path.Combine(ErgebnisPfad, testfall.Bezeichnung + ".xml");

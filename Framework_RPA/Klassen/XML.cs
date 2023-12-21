@@ -66,11 +66,14 @@ namespace Framework_RPA
         [XmlElement("Bereich")]
         public string Bereich { get; set; }
 
-        [XmlElement("SkriptID")]
-        public string SkriptID { get; set; }
+        [XmlElement("Argument1")]
+        public string Argument1 { get; set; }
 
-        [XmlElement("SkriptPfad")]
-        public string SkriptPfad { get; set; }
+        [XmlElement("Argument2")]
+        public string Argument2 { get; set; }
+
+        [XmlElement("Argument3")]
+        public string Argument3 { get; set; }
 
         [XmlElement("AblagePfad")]
         public string AblagePfad { get; set; }

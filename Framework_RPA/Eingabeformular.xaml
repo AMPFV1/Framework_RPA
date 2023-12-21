@@ -19,16 +19,16 @@
                 <ComboBox x:Name="cbBereich"  Margin="10,10,0,0" Width="200" IsEditable="True" VerticalContentAlignment="Center" Height="25"/>
             </StackPanel>
             <StackPanel Orientation="Horizontal">
-                <Label Content="Skript ID:" Margin="10,10,0,0" Width="80" />
-                <TextBox x:Name="txtSkriptID"  Margin="10,10,0,0" Width="200" VerticalContentAlignment="Center" Height="25"/>
-            </StackPanel>
-            <StackPanel Orientation="Horizontal" Height="25">
-                <Label Content="oder" Margin="10,0,0,0" Width="80"/>
+                <Label Content="Argument 1:" Margin="10,10,0,0" Width="80" />
+                <TextBox x:Name="txtArgument1"  Margin="10,10,0,0" Width="200" VerticalContentAlignment="Center" Height="25"/>
             </StackPanel>
             <StackPanel Orientation="Horizontal">
-                <Label Content="SkriptPfad:" Margin="10,0,0,0" Width="80" />
-                <TextBox x:Name="txbSkriptPfad"  Margin="10,0,0,0" Width="200" VerticalContentAlignment="Center" Height="25"/>
-                <Button x:Name="btnFileDialog" Content="..." Width="20" Height="20" Margin="5,5,0,0" Click="btnFileDialog_Click"/>
+                <Label Content="Argument 2:" Margin="10,10,0,0" Width="80" />
+                <TextBox x:Name="txtArgument2"  Margin="10,10,0,0" Width="200" VerticalContentAlignment="Center" Height="25"/>
+            </StackPanel>
+            <StackPanel Orientation="Horizontal">
+                <Label Content="Argument 3:" Margin="10,10,0,0" Width="80" />
+                <TextBox x:Name="txtArgument3"  Margin="10,10,0,0" Width="200" VerticalContentAlignment="Center" Height="25"/>
             </StackPanel>
         </StackPanel>
     </Grid>

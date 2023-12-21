@@ -1,0 +1,46 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<ClassDiagram MajorVersion="1" MinorVersion="1">
+  <Class Name="Testautomation.ProgressProtocol">
+    <Position X="2.25" Y="3" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAQQAAAAAAAAAAAAAAAAAAAAACAAAAAA=</HashCode>
+      <FileName>ProgressProtocol.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Testautomation.ResultProtocol">
+    <Position X="0.5" Y="3" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAQQAAAAAAAAQAABAAAAAAAAACAAAAAA=</HashCode>
+      <FileName>ResultProtocol.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Testautomation.RPA_Close">
+    <Position X="7.5" Y="3" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAQAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>RPA_Close.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Testautomation.RPATestautomation">
+    <Position X="3.75" Y="6.25" Width="2.25" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAQAAAAAAAIAEAAAIAAAQAAAAAAAAAAAAA=</HashCode>
+      <FileName>RPATestautomation.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Testautomation.SetError">
+    <Position X="4" Y="3" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAQQAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>SetError.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Testautomation.TestcaseInfos">
+    <Position X="5.75" Y="3" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAQQAAAAAAAAAAAAAAAAAAAAgAAAAAAA=</HashCode>
+      <FileName>TestcaseInfos.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Font Name="Segoe UI" Size="9" />
+</ClassDiagram>

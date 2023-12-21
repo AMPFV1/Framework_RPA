@@ -26,8 +26,9 @@ namespace Framework_RPA
             TestcaseXML testfall = new TestcaseXML();
             testfall.Bezeichnung = txtTestfall.Text;
             testfall.Bereich = cbBereich.Text;
-            testfall.SkriptID = txtSkriptID.Text;
-            testfall.SkriptPfad = txbSkriptPfad.Text;
+            testfall.Argument1 = txtArgument1.Text;
+            testfall.Argument2 = txtArgument2.Text;
+            testfall.Argument3 = txtArgument3.Text;
             testfall.AblagePfad = pfadTestfall;
             if (File.Exists(Path.Combine(pfadTestfall,testfall.xmlFile)))
             {
@@ -47,8 +48,9 @@ namespace Framework_RPA
 
             txtTestfall.Text = testfall.Bezeichnung;
             cbBereich.Text = testfall.Bereich;
-            txtSkriptID.Text = testfall.SkriptID;
-            txbSkriptPfad.Text = testfall.SkriptPfad;
+            txtArgument1.Text = testfall.Argument1;
+            txtArgument2.Text = testfall.Argument2;
+            txtArgument3.Text = testfall.Argument3;
         }
 
         private void btnAbbrechen_Click(object sender, RoutedEventArgs e)
@@ -56,14 +58,6 @@ namespace Framework_RPA
             this.Close();
         }
 
-        private void btnFileDialog_Click(object sender, RoutedEventArgs e)
-        {
-            OpenFileDialog openFileDialog = new OpenFileDialog();
-            if (openFileDialog.ShowDialog() == true)
-            {
-                txbSkriptPfad.Text = openFileDialog.FileName;
-            }
-        }
         private void Bereicheladen()
         {
             var alleBereiche = Directory.EnumerateDirectories(RegistrySettings.getRegistry("Pfad_Testfälle"));

@@ -13,8 +13,9 @@ namespace Framework_RPA
         }
         public string Bezeichnung { get; set; }
         public string Bereich { get; set; }
-        public string SkriptID { get; set; }
-        public string SkriptPfad { get; set; }
+        public string Argument1 { get; set; }
+        public string Argument2 { get; set; }
+        public string Argument3 { get; set; }
         public string AblagePfad { get; set; }
         public string ImageSource { get; set; }
         public string FontWeight { get; set; }

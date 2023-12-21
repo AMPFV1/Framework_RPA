@@ -1,6 +1,7 @@
 ﻿using System;
 using System.Diagnostics;
 using System.IO;
+using System.Text;
 
 namespace Framework_RPA
 {
@@ -14,17 +15,25 @@ namespace Framework_RPA
             
             //Startet Softwareroboter
             Process RPA_Software = new Process();
-            RPA_Software.StartInfo.FileName = RegistrySettings.getRegistry("RPA_Software");
+            ProcessStartInfo RPAStartInfo = new ProcessStartInfo();
+            StringBuilder argumenteList = new StringBuilder();
+            RPAStartInfo.FileName = RegistrySettings.getRegistry("RPA_Software");
             
-            if (testfall.SkriptID != "")
+            if (testfall.Argument1 != "")
             {
-                RPA_Software.StartInfo.Arguments =  RegistrySettings.getRegistry("Argument_SkriptID") + " " + testfall.SkriptID;
+                argumenteList.Append(testfall.Argument1 + " ");
             }
-            else
+            if (testfall.Argument2 != "")
             {
-                RPA_Software.StartInfo.Arguments = "\"" + RegistrySettings.getRegistry("Argument_SkriptPfad") + " " + testfall.SkriptPfad + "\"";
+                argumenteList.Append(testfall.Argument2 + " ");
             }
-            RPA_Software.StartInfo.WindowStyle = ProcessWindowStyle.Minimized;
+            if (testfall.Argument3 != "")
+            {
+                argumenteList.Append(testfall.Argument3 + " ");
+            }
+            RPAStartInfo.Arguments = argumenteList.ToString();
+            RPAStartInfo.WindowStyle = ProcessWindowStyle.Minimized;
+            RPA_Software.StartInfo = RPAStartInfo;
             RPA_Software.Start();
             RPA_Software.WaitForExit(Convert.ToInt32(RegistrySettings.getRegistry("Max_Dauer")));
 
