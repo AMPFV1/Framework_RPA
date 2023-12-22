@@ -17,9 +17,7 @@ namespace Framework_RPA
             defaultValues.Clear();
             defaultValues.Add("Pfad_Ergebnisse", @"D:\Daten\Framework_RPA\Ergebnisse");
             defaultValues.Add("Pfad_Testfälle", @"D:\Daten\Framework_RPA\Testfälle");
-            defaultValues.Add("RPA_Software", "OpenRPA.exe");
-            defaultValues.Add("Argument_SkriptID", "-workflowid");
-            defaultValues.Add("Argument_SkriptPfad", "");
+            defaultValues.Add("RPA_Software", "");
             defaultValues.Add("Max_Dauer", "900000");
             SetAllRegitryKeys();
         }
