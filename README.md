@@ -36,7 +36,7 @@ Hier eine Auflistung der erfordlichen Einstellungen mit einer Beschreibung:
 |Max_Dauer|900000|Wartezeit des Frameworks bis der Testfall beendet wird
 
 ## RPA Erweiterungen
-[!IMPORTANT]
+> [!IMPORTANT]
 Der Einsatz einer RPA Software gemeinsam mit dem Framework ist nur möglich wenn die Funktionen der RPA Software mit DLL erweitert werden können.
 
 
@@ -53,7 +53,7 @@ wie bei der jeweiligen Aktivität.
 ### RPA_Close – CloseRPA
 Im Zuge der Entwicklung des Prototyps wurde festgestellt, dass sich nicht alle 
 Softwareroboter am Ende des Prozesses automatisch oder durch eine eigene Funktion 
-schließen lassen. Daher war die Zurverfügungstellung einer Funktion, welche die RPASoftware schließt, erforderlich.
+schließen lassen. Daher war die Zurverfügungstellung einer Funktion, welche die RPA-Software schließt, erforderlich.
 ### TestcaseInfos – GetValueFromTestcaseXML
 Die durch das Framework erstellten Informationen für den jeweiligen Testfall, in Form 
 einer XML-Datei, sind zum Teil auch für den jeweiligen Softwareroboter von Interesse. 
